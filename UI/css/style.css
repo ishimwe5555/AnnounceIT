@@ -4,7 +4,7 @@
   }
   
   body {
-    background: #029676;
+    background: #eff5d5e5;
     color: #1a293a;
     font-family: "Open Sans", sans-serif;
   }
@@ -22,28 +22,37 @@
   
   .btns{
     text-align: center;
-    padding-top:80px;
+    
   }
+  .nav-bar{
+   
+  height:120px;
+  padding:0 20px 0;
+    background-color: #b8dae2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
  .logout a{
-   float: right;
-   margin: 20px 50px ;
     padding: 20px 20px;
-    background: #151938;
+    background: #352e49;
       border: 0;
       border-radius: 10px;
-      color: rgba(247, 117, 10, 0.795);
+      color: rgba(224, 26, 26, 0.925);
       font-weight: bold;
       font-size:large;
       cursor: pointer;
       transition: background 0.3s ease-in-out;
  }
  .logout a:hover{
-   background-color: #39a2e7;
+   background-color: #68617a;
  }
 
   .btns a{
     padding: 25px 25px;
-    background: #02395e;
+    background: #3a617a;
       border: 0;
       border-radius: 10px;
       color: #fff;
@@ -53,7 +62,7 @@
       transition: background 0.3s ease-in-out;
     } 
     .btns a:hover{
-      background-color: #39a2e7;
+      background-color: #4086b4;
     }
     .btn-link{
       margin-top: 90px;
@@ -69,10 +78,11 @@
     }
    
     .posting p{
-      color: #FFF;
+      color: rgb(23, 62, 100);
       font-weight: bolder;
       font-size: 30px;
     }
+     
     .new-announce{
       padding-top: 70px;
     }
@@ -91,14 +101,14 @@
   
 }
 .report{
-  background-color: darkred;
+  background-color: rgb(97, 123, 128);
   padding: 7px;
   float:right;
   margin:20px 10px 0 0;
   cursor: pointer;
 }
 .report:hover{
-  background-color: rgb(206, 142, 5);
+  background-color: rgb(10, 93, 160);
 }
 .report img{
   width:20px;
@@ -106,14 +116,14 @@
 }
 .btn-view{
   cursor: pointer;
-  background-color: rgb(100, 49, 240);
+  background-color: rgb(97, 123, 128);
   width: 100px;
   height:35px;
   padding:10px;
   margin-top: 25px;
 }
 .btn-view:hover{
-  background-color: #029676;
+  background-color: rgb(10, 93, 160);
 }
   .login {
     width: 350px;
@@ -167,7 +177,7 @@
     transition: background 0.3s ease-in-out;
   }
   input[type="submit"]:hover {
-    background: #39a2e7;
+    background: #141136;
     animation-name: shake;
   }
   
@@ -261,8 +271,8 @@
   position: absolute;
   top: 27px;
   left: 0;
-  background: #023441;
-  color: #DFDFDF;
+  background: #59818b;
+  color: rgb(207, 207, 250);
   
   opacity:0;
   transition: opacity 400ms ease-out;
@@ -270,13 +280,14 @@
 
 .tab-view .content h1{
   text-align: center;
-  color: ghostwhite;
+  color: rgb(4, 43, 82);
   padding-bottom: 25px;
 }
 
 .tab-view .announcement{
   padding-bottom: 30px;
- background-color:#262261;
+ background-color:#f7f7ff;
+ color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: #023441 2px groove;
@@ -295,9 +306,28 @@
 }
 
 .tab-view>.tab-item>[id^="tab"]:checked ~ [id^="tab-content"] {
+  overflow-y:auto;
+    height: 350px;
   z-index: 1;/* or display: block; */
 margin-top: 30px;
   opacity: 1;
   transition: opacity 400ms ease-out;
 }
 
+.footer{
+  padding: 10px;
+position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  background-color: #b8dae2;
+  color: rgb(23, 62, 100);
+  text-align: center;
+}
+.norb{
+  color: brown;
+}
+.add-announce{
+  margin-left: 500px;
+}
