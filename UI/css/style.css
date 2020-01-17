@@ -23,8 +23,24 @@
   .btns{
     text-align: center;
     padding-top:80px;
-  
   }
+ .logout a{
+   float: right;
+   margin: 20px 50px ;
+    padding: 20px 20px;
+    background: #151938;
+      border: 0;
+      border-radius: 10px;
+      color: rgba(247, 117, 10, 0.795);
+      font-weight: bold;
+      font-size:large;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+ }
+ .logout a:hover{
+   background-color: #39a2e7;
+ }
+
   .btns a{
     padding: 25px 25px;
     background: #02395e;
@@ -42,15 +58,16 @@
     .btn-link{
       margin-top: 90px;
     }
-
+   
     .posting{
       
       padding-left: 70px;
     }
     .btn-post{
-  
+  width:100px ;
       margin: 50px; 
     }
+   
     .posting p{
       color: #FFF;
       font-weight: bolder;
