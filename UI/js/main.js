@@ -1,12 +1,12 @@
-function check(form)/*function to check userid & password*/
-{
- /*the following code checkes whether the entered userid and password are matching*/
- if(form.username.value == "admin" && form.password.value == "admin")
-  {
-    window.open('admin/admin-view.html')/*opens the target page while Id & password matches*/
+
+function check(form){
+ // var user=document.getElementById('username');
+  //var pw=document.getElementById('pw');
+  if (form.username.value=="admin" && form.password.value=="admin"){
+window.location="../admin/admin-view.html";
   }
- else
- {
-   alert("Error Password or Username")/*displays error message*/
+  else{
+ window.location="home.html";
   }
+ 
 }
