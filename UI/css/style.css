@@ -25,15 +25,18 @@
     
   }
   .nav-bar{
-   
-  height:120px;
+display: block;
+  height:100px;
   padding:0 20px 0;
     background-color: #b8dae2;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+.logout h3{
+  float: left;
+margin-right: 30px;
+}
   
  .logout a{
     padding: 20px 20px;
@@ -98,7 +101,8 @@
 .flex-container{
   display: flex;
   flex-direction:column;
-  
+ overflow-y:auto;
+  height: 600px;
 }
 .report{
   background-color: rgb(97, 123, 128);
@@ -180,7 +184,21 @@
     background: #141136;
     animation-name: shake;
   }
-  
+  #anim-login{
+        background: #02395e;
+    border: 0;
+    width: 350px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  #anim-login:hover{
+    background: #141136;
+    animation-name: shake;
+  }
   .forgot {
     margin-top: 30px;
     display: block;
@@ -273,7 +291,6 @@
   left: 0;
   background: #59818b;
   color: rgb(207, 207, 250);
-  
   opacity:0;
   transition: opacity 400ms ease-out;
 }
@@ -306,28 +323,74 @@
 }
 
 .tab-view>.tab-item>[id^="tab"]:checked ~ [id^="tab-content"] {
-  overflow-y:auto;
-    height: 350px;
-  z-index: 1;/* or display: block; */
-margin-top: 30px;
+  
+   z-index: 1;/* or display: block; */
+  margin-top: 30px;
   opacity: 1;
   transition: opacity 400ms ease-out;
 }
 
-.footer{
-  padding: 10px;
-position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 30px;
-  width: 100%;
-  background-color: #b8dae2;
-  color: rgb(23, 62, 100);
-  text-align: center;
-}
+
 .norb{
   color: brown;
 }
 .add-announce{
   margin-left: 500px;
+}
+
+.wrapper{
+  min-height: 100%;
+  position: relative;
+  margin-bottom: -40px;
+}
+.container{
+ width: 100%;
+  display: block;
+}
+.footer, .wrapper:after{
+  height: 40px;
+}
+.footer{
+  display: block;
+  
+ margin-top: 50%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #b8dae2;
+  color: rgb(23, 62, 100);
+  text-align: center;
+}
+.footer1{
+  text-align: center;
+ margin-top: 20%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #b8dae2;
+  color: rgb(23, 62, 100);
+}
+.ft-add{
+  float: left;
+  text-align: center;
+ margin-top: 2%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #b8dae2;
+  color: rgb(23, 62, 100);
+}
+.ft-admin{
+  float: left;
+  text-align: center;
+ margin-top: 11%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #b8dae2;
+  color: rgb(23, 62, 100);
 }

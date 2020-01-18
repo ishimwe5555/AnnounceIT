@@ -9,16 +9,19 @@
 <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="nav-bar">
-    <div class="logo1"><h2>AnnounceIT</h2></div>
-    <div class="logout"><a href="login.html">Log out</a></div>
-  </div>
-    <h2>View Announcements</h2>
-<ul class="tab-view">
-    <li class="tab-item">
-        <input type="radio" name="tabs" checked="checked" id="tab1" />
-        <label for="tab1">All</label>
-        <div id="tab-content1" class="content">
+  <div class="wrapper">
+    <div class="nav-bar">
+    <div class="logo1"><h2>AnnounceIT</h2>
+    </div>
+    <div class="logout"><h3>User Login</h3><a href="login.html">Log out</a></div>
+      </div>
+  <div class="container">
+       <h2>View Announcements</h2>
+       <ul class="tab-view">
+          <li class="tab-item">
+         <input type="radio" name="tabs" checked="checked" id="tab1" />
+         <label for="tab1">All</label>
+         <div id="tab-content1" class="content">
           <h1>All Announcements</h1>
           <div class="flex-container">
              <div  class="announcement"> 
@@ -197,8 +200,12 @@
          </div>
     </li>
 
-</ul>
-<div class="footer">Copyright@ <a href="home.html">AnnounceIT</a>. Designed by <span class="norb">Norbert Ishimwe</span></div>
+ </ul>
+  </div>
+<div class="footer"><h3>Copyright@ <script>document.write(new Date().getFullYear())</script>
+  .AnnounceIT Designed by <span class="norb">Norbert ISHIMWE</span></h3>
 
+</div>
+  </div>
     </body>
     </html>
