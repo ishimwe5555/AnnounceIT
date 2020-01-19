@@ -384,6 +384,7 @@ margin-right: 30px;
   color: rgb(23, 62, 100);
 }
 .ft-admin{
+  position:fixed;
   float: left;
   text-align: center;
  margin-top: 11%;
