@@ -4,12 +4,74 @@
   }
   
   body {
+    
     background: #eff5d5e5;
     color: #1a293a;
     font-family: "Open Sans", sans-serif;
   }
-  
+  article{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%vh;
+    align-items: stretch;
+  }
+  .main{
+    display: flex;
+    flex: 1;
+  }
+  .main p{
+    font-size: 15px;
+  }
+  .main h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+             /*Create new announcement*/
+  .main-create{
+    flex: 1;
+    order: 1;
+    margin: 2em;
+  }
+.header-create,.footer-create{
+  flex-basis: 50px;
+}
+.header-create{
+  height: 4.9vw;
+}
+.footer-create{
+    margin-top: auto;
+}
+  main {
+    flex: 1;
+    order:1;
+    margin: 2em;
+  }
+  aside{
+    flex:0 0 20vw;
+    order: 2;
+    background-color: rgb(179, 179, 113);
+    margin: 2em;
+  }
+  header{
+    background-color: #b8dae2;
+    height: 5vw;
+  }
+  footer{
+    height: 2vw; 
+     background-color: #b8dae2;
+     
+  }
+ footer h3{
+   text-align: center;
+   padding-top: 10px;
+ }
+  header, footer, main, aside {
+    padding: 1em;
+  }
   h2 {
+    
     color: rgb(23, 62, 100);
     font-family: "Sofia", cursive;
     font-size: 15px;
@@ -18,11 +80,35 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  
-  
-  .btns{
+  .welcomeback{
+    color: rgb(23, 62, 100);
+    font-family: "Sofia", cursive;
+    font-size: 3.2em;
+    font-weight: bold;
     text-align: center;
-    
+    margin-bottom: 20px;
+  }
+  .gallery{
+    margin: 10px;
+    float: left;
+    width: 380px;
+  }
+  .gallery img{
+   
+    width: 100%;
+    height: auto;
+  }
+  .reg{
+    margin-top: 15px;
+  }
+  .reg a{
+    color:#02395e ;
+  }
+  .reg a:hover{
+    text-decoration: underline;
+  }
+  .btns{
+    text-align: center;  
   }
   .nav-bar{
 display: block;
@@ -77,7 +163,7 @@ margin-right: 30px;
     }
     .btn-post{
   width:100px ;
-      margin: 50px; 
+      margin: 50px 20px 0 0; 
     }
    
     .posting p{
@@ -87,9 +173,11 @@ margin-right: 30px;
     }
      
     .new-announce{
-      padding-top: 70px;
+      margin-top: -15px;
+      padding-top: 55px;
     }
 .text-area{
+  font-size: 20px;
   width: 300px;
   height:100px;
 }
@@ -120,7 +208,8 @@ margin-right: 30px;
 }
 .btn-view{
   cursor: pointer;
-  background-color: rgb(97, 123, 128);
+  color: #fff;
+  background-color: rgb(1, 14, 70);
   width: 100px;
   height:35px;
   padding:10px;
@@ -135,6 +224,9 @@ margin-right: 30px;
     top: 10%;
     left: 50%;
     margin-left: -175px;
+  }
+  input::placeholder{
+    font-size: 16px;
   }
   
   input[type="text"], input[type="password"] {
@@ -196,13 +288,13 @@ margin-right: 30px;
     transition: background 0.3s ease-in-out;
   }
   #anim-login:hover{
-    background: #141136;
+    background: #373191;
     animation-name: shake;
   }
   .forgot {
     margin-top: 30px;
     display: block;
-    font-size: 11px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
     color: rgb(13, 52, 90);
@@ -210,10 +302,10 @@ margin-right: 30px;
   .forgot:hover {
     margin-top: 30px;
     display: block;
-    font-size: 11px;
+    
     text-align: center;
     font-weight: bold;
-    color: rgb(0, 14, 29);
+    color: rgb(50, 134, 224);
   }
   
   .agree {
@@ -233,21 +325,21 @@ margin-right: 30px;
     animation-duration: 1s;
   }
   
-  @keyframes shake {
+@keyframes shake {
     0%, 100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
     10%, 30%, 50%, 70%, 90% {
-      transform: translateX(-10px);
+      transform: translateY(-10px);
     }
     20%, 40%, 60%, 80% {
-      transform: translateX(10px);
+      transform: translateY(10px);
     }
   }
   
  
  .tab-view{
-  width: 600px;
+  width: 80vw;
   display: block;
   margin: 40px auto;
   position: relative;
@@ -284,7 +376,7 @@ margin-right: 30px;
 .tab-view .content {
   z-index: 0;/* or display: none; */
   overflow: hidden;
-  width: 600px;
+  width: 80vw;
   padding: 25px;
   position: absolute;
   top: 27px;
@@ -337,7 +429,9 @@ margin-right: 30px;
 .add-announce{
   margin-left: 500px;
 }
-
+.announceTitle,.text-area::placeholder{
+  font-size: 15px;
+}
 .wrapper{
   min-height: 100%;
   position: relative;
@@ -352,7 +446,7 @@ margin-right: 30px;
 }
 .footer{
   display: block;
-  
+  padding-top: 25px;
  margin-top: 50%;
   left: 0;
   bottom: 0;
@@ -362,17 +456,8 @@ margin-right: 30px;
   color: rgb(23, 62, 100);
   text-align: center;
 }
-.footer1{
-  text-align: center;
- margin-top: 20%;
-  left: 0;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  background-color: #b8dae2;
-  color: rgb(23, 62, 100);
-}
 .ft-add{
+  padding-top: 25px;
   float: left;
   text-align: center;
  margin-top: 2%;
@@ -384,7 +469,9 @@ margin-right: 30px;
   color: rgb(23, 62, 100);
 }
 .ft-admin{
+  padding-top: 25px;
   position:fixed;
+
   float: left;
   text-align: center;
  /*margin-top: 11%;*/
