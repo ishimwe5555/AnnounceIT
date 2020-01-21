@@ -4,11 +4,12 @@
   }
   
   body {
-    
     background: #eff5d5e5;
     color: #1a293a;
     font-family: "Open Sans", sans-serif;
   }
+
+  /*HOMEPAGE*/
   article{
     display: flex;
     flex-direction: column;
@@ -110,6 +111,8 @@
   .btns{
     text-align: center;  
   }
+
+  /*NAVIGATION BAR*/
   .nav-bar{
 display: block;
   height:100px;
@@ -260,7 +263,7 @@ margin-right: 30px;
   #agree:checked ~ label[for=agree] {
     background: #cfd303;
   }
-  
+ 
   input[type="submit"] {
     background: #02395e;
     border: 0;
@@ -276,6 +279,8 @@ margin-right: 30px;
     background: #141136;
     animation-name: shake;
   }
+
+  /*ANIMATION LOGIN AND SIGNUP PAGES*/
   #anim-login{
         background: #02395e;
     border: 0;
@@ -337,12 +342,13 @@ margin-right: 30px;
     }
   }
   
- 
+ /* Tabs content styling*/
  .tab-view{
   width: 80vw;
   display: block;
   margin: 40px auto;
   position: relative;
+  
   
 }
 
@@ -369,8 +375,7 @@ margin-right: 30px;
   cursor: pointer;
   position: relative;
   color: #FFF;
-  background: #4A83FD;
-  
+  background: #4A83FD; 
 }
 
 .tab-view .content {
@@ -386,6 +391,9 @@ margin-right: 30px;
   opacity:0;
   transition: opacity 400ms ease-out;
 }
+.tab-switch:checked + .tab-label{
+  background-color: #425b7c;
+}  
 
 .tab-view .content h1{
   text-align: center;
@@ -409,6 +417,7 @@ margin-right: 30px;
   color: rgb(23, 128, 9);
 }
 .tab-view>.tab-item>[id^=".tab-item"]:checked + label {
+  
   top: 0;
   background: #303030;
   color: #F5F5F5;
@@ -421,8 +430,9 @@ margin-right: 30px;
   opacity: 1;
   transition: opacity 400ms ease-out;
 }
+/* END OF TABS STYLING*/
 
-
+/*ADD ANNOUNCEMENT */
 .norb{
   color: brown;
 }
@@ -441,6 +451,8 @@ margin-right: 30px;
  width: 100%;
   display: block;
 }
+
+/*FOOTER DESIGN*/
 .footer, .wrapper:after{
   height: 40px;
 }
