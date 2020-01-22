@@ -129,17 +129,17 @@ margin-right: 30px;
   
  .logout a{
     padding: 20px 20px;
-    background: #352e49;
+    background: #e8e3f5;
       border: 0;
       border-radius: 10px;
-      color: rgba(224, 26, 26, 0.925);
+      color: rgba(4, 158, 112, 0.925);
       font-weight: bold;
       font-size:large;
       cursor: pointer;
       transition: background 0.3s ease-in-out;
  }
  .logout a:hover{
-   background-color: #68617a;
+   background-color: #4ddaf3;
  }
 
   .btns a{
@@ -196,30 +196,39 @@ margin-right: 30px;
   height: 600px;
 }
 .report{
-  background-color: rgb(97, 123, 128);
+  background-color: rgb(37, 72, 253);
+  color:white;
   padding: 7px;
-  float:right;
+  float:left;
   margin:20px 10px 0 0;
   cursor: pointer;
 }
 .report:hover{
-  background-color: rgb(10, 93, 160);
+  background-color: rgb(40, 136, 165);
 }
 .report img{
   width:20px;
   height:20px;
 }
 .btn-view{
+  float: left;
   cursor: pointer;
   color: #fff;
-  background-color: rgb(1, 14, 70);
+  background-color: rgb(37, 72, 228);
   width: 100px;
-  height:35px;
+  height:40px;
   padding:10px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .btn-view:hover{
-  background-color: rgb(10, 93, 160);
+  background-color: rgb(40, 136, 165);
+}
+.buttons-v{
+  float:right;
+  margin-left:70px;
+}
+.overview-btn{
+  padding: 3vw;
 }
   .login {
     width: 350px;
@@ -247,7 +256,7 @@ margin-right: 30px;
   }
   
   label {
-    border-radius: 50%;
+
     background: transparent;
     content: "";
     transition: all 0.3s ease-in-out;
@@ -416,6 +425,25 @@ margin-right: 30px;
   font-weight: bold;
   color: rgb(23, 128, 9);
 }
+.announcement p{
+  text-align: left;
+  padding:0 8vw;
+}
+.latest{
+  padding:5px;
+ border: #01070e 1px dashed;
+}
+.view-home{
+ margin-top: 2vw;
+  padding:0 0 0 37vw;
+}
+.view-home a{
+  font-size: 1.5vw;
+color:#3333ff
+}
+.view-home a:hover{
+  text-decoration: underline;
+}
 .tab-view>.tab-item>[id^=".tab-item"]:checked + label {
   
   top: 0;
@@ -493,4 +521,18 @@ margin-right: 30px;
   width: 100%;
   background-color: #b8dae2;
   color: rgb(23, 62, 100);
+}
+
+.main-create img{
+float: left;
+}
+.main-create .announce-text p{
+  font-size: 15vw;
+  float: right;
+ text-align: center;
+ width: 1vw;
+}
+.ft-index{
+  margin-top:12.9%;
+ bottom:0;
 }
