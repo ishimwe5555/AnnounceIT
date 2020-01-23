@@ -39,10 +39,11 @@
   flex-basis: 50px;
 }
 .header-create{
-  height: 4.9vw;
+  height: 1.9vw;
 }
 .footer-create{
-    margin-top: auto;
+  background-color: transparent;
+  margin-top:8.4vw;
 }
   main {
     flex: 1;
@@ -56,12 +57,12 @@
     margin: 2em;
   }
   header{
-    background-color: #b8dae2;
-    height: 5vw;
+    background-color:transparent;
+    height: 3vw;
   }
   footer{
     height: 2vw; 
-     background-color: #b8dae2;
+     background-color: #f0f8fa;
      
   }
  footer h3{
@@ -73,7 +74,7 @@
   }
   h2 {
     
-    color: rgb(23, 62, 100);
+    color: rgb(36, 38, 39);
     font-family: "Sofia", cursive;
     font-size: 15px;
     font-weight: bold;
@@ -82,7 +83,7 @@
     margin-bottom: 20px;
   }
   .welcomeback{
-    color: rgb(23, 62, 100);
+    color: rgb(36, 38, 39);
     font-family: "Sofia", cursive;
     font-size: 3.2em;
     font-weight: bold;
@@ -103,6 +104,7 @@
     margin-top: 15px;
   }
   .reg a{
+    font-weight: bold;
     color:#02395e ;
   }
   .reg a:hover{
@@ -114,10 +116,10 @@
 
   /*NAVIGATION BAR*/
   .nav-bar{
-display: block;
-  height:100px;
-  padding:0 20px 0;
-    background-color: #b8dae2;
+  height:80px;
+  margin-top: 0px;
+  padding:0 20px 0 0;
+    background-color: #f0eee4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,23 +130,24 @@ margin-right: 30px;
 }
   
  .logout a{
+   margin-left:5px;
     padding: 20px 20px;
-    background: #e8e3f5;
+    background: #252425;
       border: 0;
       border-radius: 10px;
-      color: rgba(4, 158, 112, 0.925);
+      color: rgba(251, 255, 254, 0.925);
       font-weight: bold;
       font-size:large;
       cursor: pointer;
       transition: background 0.3s ease-in-out;
  }
  .logout a:hover{
-   background-color: #4ddaf3;
+   background-color: #535355;
  }
 
   .btns a{
     padding: 25px 25px;
-    background: #3a617a;
+    background: #749bb3;
       border: 0;
       border-radius: 10px;
       color: #fff;
@@ -161,16 +164,21 @@ margin-right: 30px;
     }
    
     .posting{
-      
       padding-left: 70px;
     }
+    .latest{
+     top:0;
+    }
     .btn-post{
-  width:100px ;
+      width:100px ;
       margin: 50px 20px 0 0; 
+    }
+    .posting input[type="submit"]{
+      font-size: 20px;
     }
    
     .posting p{
-      color: rgb(23, 62, 100);
+      color: rgb(63, 67, 71);
       font-weight: bolder;
       font-size: 30px;
     }
@@ -180,9 +188,11 @@ margin-right: 30px;
       padding-top: 55px;
     }
 .text-area{
-  font-size: 20px;
-  width: 300px;
-  height:100px;
+  resize: none;
+  font-size: 25px;
+  width: 700px;
+  height:170px;
+  padding:8px;
 }
     a {
       color: #435160;
@@ -193,7 +203,7 @@ margin-right: 30px;
   display: flex;
   flex-direction:column;
  overflow-y:auto;
-  height: 600px;
+  height: 100%;
 }
 .report{
   background-color: rgb(37, 72, 253);
@@ -214,7 +224,7 @@ margin-right: 30px;
   float: left;
   cursor: pointer;
   color: #fff;
-  background-color: rgb(37, 72, 228);
+  background-color: rgb(37, 57, 253);
   width: 100px;
   height:40px;
   padding:10px;
@@ -227,8 +237,23 @@ margin-right: 30px;
   float:right;
   margin-left:70px;
 }
-.overview-btn{
-  padding: 3vw;
+
+.main-div p{
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.overview-btn a:hover{ 
+background-color: rgb(67, 67, 68);
+}
+.overview-btn a{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding:1.1vw;
+  border-radius: 3vw;
+ background-color: #222229;
+ color: rgb(164, 185, 177);
+font-size: 1.3vw;
+  margin: 10px 0 0 52vw;
 }
   .login {
     width: 350px;
@@ -239,17 +264,19 @@ margin-right: 30px;
   }
   input::placeholder{
     font-size: 16px;
+    padding-left: 5px;
   }
   
   input[type="text"], input[type="password"] {
     width: 350px;
-    padding: 10px 0px;
+    padding-left: 15px;
     background: transparent;
+    margin-top: 1vw;
     border: 0;
     border-bottom: 1px solid #435160;
     outline: none;
     color: rgb(19, 19, 0);
-    font-size: 16px;
+    font-size: 20px;
   }
   input[type=checkbox] {
     display: none;
@@ -274,7 +301,7 @@ margin-right: 30px;
   }
  
   input[type="submit"] {
-    background: #02395e;
+    background: #1a1818;
     border: 0;
     width: 350px;
     height: 40px;
@@ -285,25 +312,25 @@ margin-right: 30px;
     transition: background 0.3s ease-in-out;
   }
   input[type="submit"]:hover {
-    background: #141136;
+    background: #313133;
     animation-name: shake;
   }
 
   /*ANIMATION LOGIN AND SIGNUP PAGES*/
   #anim-login{
-        background: #02395e;
+    background: #191a1b;
     border: 0;
     width: 350px;
     height: 40px;
     border-radius: 3px;
     color: #fff;
-    font-size: 12px;
+    font-size: 17px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    margin-top: 2vw;
   }
   #anim-login:hover{
-    background: #373191;
-    animation-name: shake;
+    background: #363638;
+   
   }
   .forgot {
     margin-top: 30px;
@@ -331,7 +358,7 @@ margin-right: 30px;
   
   ::-webkit-input-placeholder {
     color: #435160;
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .animated {
@@ -339,26 +366,14 @@ margin-right: 30px;
     animation-duration: 1s;
   }
   
-@keyframes shake {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-      transform: translateY(-10px);
-    }
-    20%, 40%, 60%, 80% {
-      transform: translateY(10px);
-    }
-  }
+
   
  /* Tabs content styling*/
  .tab-view{
   width: 80vw;
   display: block;
-  margin: 40px auto;
+  margin: 15px auto;
   position: relative;
-  
-  
 }
 
 .tab-view .tab-item{
@@ -374,7 +389,7 @@ margin-right: 30px;
 }
 
 .tab-view .tab-item>label {
-  width: 60px;
+  width: 65px;
   height:15px;
   text-align: center;
   display: block;
@@ -383,30 +398,32 @@ margin-right: 30px;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
-  color: #FFF;
-  background: #4A83FD; 
+  color: rgb(7, 7, 7);
+  background: rgb(238, 245, 245); 
 }
 
 .tab-view .content {
+  height: 43vw;border:1px solid black;
   z-index: 0;/* or display: none; */
   overflow: hidden;
-  width: 80vw;
+  width: 75vw;
   padding: 25px;
   position: absolute;
   top: 27px;
   left: 0;
-  background: #59818b;
-  color: rgb(207, 207, 250);
+  background: #d8dbdb;
+  color: rgb(11, 11, 12);
   opacity:0;
   transition: opacity 400ms ease-out;
 }
 .tab-switch:checked + .tab-label{
-  background-color: #425b7c;
+  background-color: #4f4b55;
+  color:#fff;
 }  
 
 .tab-view .content h1{
   text-align: center;
-  color: rgb(4, 43, 82);
+  color: rgb(27, 30, 32);
   padding-bottom: 25px;
 }
 
@@ -421,18 +438,16 @@ margin-right: 30px;
 }
 
 .announcement h2{
-  font-size: large;
+  font-size: 2.3vw;
   font-weight: bold;
-  color: rgb(23, 128, 9);
+  padding-top: 15px;
 }
 .announcement p{
   text-align: left;
   padding:0 8vw;
+  font-size: 1.5vw;
 }
-.latest{
-  padding:5px;
- border: #01070e 1px dashed;
-}
+
 .view-home{
  margin-top: 2vw;
   padding:0 0 0 37vw;
@@ -492,8 +507,8 @@ color:#3333ff
   bottom: 0;
   height: 50px;
   width: 100%;
-  background-color: #b8dae2;
-  color: rgb(23, 62, 100);
+  background-color: #ffffff;
+  color: rgb(34, 33, 33);
   text-align: center;
 }
 .ft-add{
@@ -531,8 +546,4 @@ float: left;
   float: right;
  text-align: center;
  width: 1vw;
-}
-.ft-index{
-  margin-top:12.9%;
- bottom:0;
 }

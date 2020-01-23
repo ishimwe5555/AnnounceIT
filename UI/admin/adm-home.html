@@ -34,33 +34,10 @@
             
                 <div class="container-wrap">
                     <div class="col-admin">
-                  <!--  <div class="profile-div">
-                        <div class="overlay"></div>
-                        <div class="profile-credential">
-                            <div class="profile-basic">
-                                    <div class="profile">
-                                            <span>
-                                                    <script>
-                                                            let fname = "Norbert";
-                                                            let lname = "ISHIMWE";
-                                                            document.write(`${fname.charAt(0)}${lname.charAt(0)}`);
-                                                            </script>
-                                            </span>
-                                        </div>
-                                        <p>Norbert Ishimwe</p>
-                            </div>
-                                
-                                    <div class="status">
-                                        <span class="user-status">Admin</span>
-                                        <span class="announce-nber">10 announcements</span>
-                                        <a href="#view-announce" class="view-more">View more announcements</a>
-                                    </div>
-                        </div>
-                        
-                    </div>-->
+                  
                     <div class="view-announce-admin active" id="view-announce">
                         <div class="title-action">
-                            <a href="#" class="create-btn">Create Announcement</a>
+                            <a href="#" class="create-btn">Create New Announcement</a>
                             <select>
                                 <option>Select by States</option>
                             </select>
@@ -68,13 +45,13 @@
                         <div class="div-table">
                             <table>
                                 <tr class="table-header">
-                                    <th style="width: 35%;">Announcement</th>
+                                    <th style="width: 35%;padding-left: 20px;">Announcement</th>
                                     <th style="width: 20%;">Status</th>
                                     <th style="width: 30%;">Created_date</th>
                                     <th style="width: 15%;">Action</th>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td>
                                     <td>Active</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -84,7 +61,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Active</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -94,7 +71,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Deactived</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -104,7 +81,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Deactived</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -114,7 +91,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td  style="padding-left: 20px;">Umuganda</td>
                                     <td>Deactived</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -124,7 +101,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td>
                                     <td>Deactived</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -134,7 +111,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td>
                                     <td>Deactived</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -144,7 +121,27 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td>
+                                    <td>Deactived</td>
+                                    <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
+                                    <td class="action">
+                                        <a href="#" data-target="view-modal" data-toggle="modal" class="btn" id="btn-view">view</a>
+                                        <a href="#" data-target="update-modal" data-toggle="modal" class="btn btn-update" id="btn-update">update</a>
+                                        <a href="#" data-target="delete-modal" data-toggle="modal" class="btn btn-delete" id="btn-delete">delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table-content">
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
+                                    <td>Deactived</td>
+                                    <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
+                                    <td class="action">
+                                        <a href="#" data-target="view-modal" data-toggle="modal" class="btn" id="btn-view">view</a>
+                                        <a href="#" data-target="update-modal" data-toggle="modal" class="btn btn-update" id="btn-update">update</a>
+                                        <a href="#" data-target="delete-modal" data-toggle="modal" class="btn btn-delete" id="btn-delete">delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table-content">
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Accepted</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -154,7 +151,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Accepted</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -164,7 +161,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Accepted</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -174,7 +171,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Accepted</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -184,7 +181,7 @@
                                     </td>
                                 </tr>
                                 <tr class="table-content">
-                                    <td>Umuganda</td>
+                                    <td style="padding-left: 20px;">Umuganda</td style="padding-left: 20px;">
                                     <td>Accepted</td>
                                     <td><script>document.write(`${new Date().getMonth()}/${new Date().getDay()}/${new Date().getFullYear()}`);</script></td>
                                     <td class="action">
@@ -339,7 +336,7 @@
                     <div class="update-content">
                         <form id="update-announce-form">
                             <div class="input-group">
-                                    <p class="label">Announcement</p>
+                                    <p class="label">Title</p>
                                     <textarea cols="10" rows="6" placeholder="announcement..." name="announcement"></textarea>
                                     
                                 </div>
