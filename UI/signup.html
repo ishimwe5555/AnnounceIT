@@ -11,10 +11,13 @@
 <body>
 <div class='login'>
   <h2>Sign Up</h2>
-  <form action="pages/index.html" method="GET">
-  <input name='username' placeholder='Username' type='text'>
-  <input id='pw' name='password' placeholder='Password' type='password'>
-  <input name='email' placeholder='E-Mail Address' type='text'>
+  <form action="pages/homepage.html" method="GET">
+    <input name='firstname' placeholder='First name' type='text'>
+    <input name='lastname' placeholder='Last name' type='text'>
+    <input name='username' placeholder='Username' type='text' required>
+    <input name='email' placeholder='E-Mail Address' type='text' required>
+  <input name='phonenumber' placeholder='Phone number' type='text'>
+  <input id='pw' name='password' placeholder='Password' type='password' required>
   <div class='agree'>
     <input id='agree' name='agree' type='checkbox'>
     <label for='agree'></label>Accept rules and conditions

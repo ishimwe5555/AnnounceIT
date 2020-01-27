@@ -16,6 +16,7 @@
     min-height: 100%vh;
     align-items: stretch;
   }
+ 
   .main{
     display: flex;
     flex: 1;
@@ -43,7 +44,7 @@
 }
 .footer-create{
   background-color: transparent;
-  margin-top:8.4vw;
+  margin-top:4.1vw;
 }
   main {
     flex: 1;
@@ -131,13 +132,13 @@ margin-right: 30px;
   
  .logout a{
    margin-left:5px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     background: #252425;
       border: 0;
       border-radius: 10px;
-      color: rgba(251, 255, 254, 0.925);
+      color: #b2becc;
       font-weight: bold;
-      font-size:large;
+      font-size:15px;
       cursor: pointer;
       transition: background 0.3s ease-in-out;
  }
@@ -269,7 +270,6 @@ font-size: 1.3vw;
   
   input[type="text"], input[type="password"] {
     width: 350px;
-    padding-left: 15px;
     background: transparent;
     margin-top: 1vw;
     border: 0;
@@ -480,7 +480,7 @@ color:#3333ff
   color: brown;
 }
 .add-announce{
-  margin-left: 500px;
+  margin-left: 200px;
 }
 .announceTitle,.text-area::placeholder{
   font-size: 15px;
@@ -542,7 +542,7 @@ color:#3333ff
 float: left;
 }
 .main-create .announce-text p{
-  font-size: 15vw;
+  font-size: 10vw;
   float: right;
  text-align: center;
  width: 1vw;

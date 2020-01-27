@@ -6,12 +6,10 @@ function check(form){
 window.location="../admin/adm-home.html";
   }
   else{
- window.location="index.html";
+ window.location="homepage.html";
   }
  
 }
-
-
 
 const menu = document.querySelector('#js_menu');
 const nav_toggle = document.querySelector('#js_navbar_toggle');

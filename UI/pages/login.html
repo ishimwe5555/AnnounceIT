@@ -13,11 +13,10 @@
 <div class='login'>
 <h3 class="welcomeback">Welcome back!</h3>
   <h2>Log in</h2>
-  <form name="login">
-  <input id="username" name='username' placeholder='Username' type='text' required>
+<form name="login" action="homepage.html">
+  <input id="username" name='username' placeholder='Username' type='text' required/>
   <input id='pw' name='password' placeholder='Password' type='password' required>
- 
-  <input class='animated' id="anim-login" type='button' onclick="check(this.form)" value='Log in'>
+  <input class='animated' id="anim-login" type='submit' onclickh="check(this.form)" value='Log in'>
 </form>
 <p class="reg">Not a registered user?<a href="../signup.html">Sign up here</a></p>
   <a class='forgot' href='reset.html'>Forgot your password?</a>
