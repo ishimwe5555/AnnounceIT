@@ -64,7 +64,7 @@ app.get('/:id', verifyToken, (req, res)=>{
   app.post('/', verifyToken, (req, res)=>{
     const schema = {
         id:Joi.number(),
-        owner:Joi.number().default(4),
+        owner:Joi.number(),
         status:Joi.string().default("pending"),
         text:Joi.string().required(),
         start_date:Joi.date().required(),
@@ -92,7 +92,8 @@ app.get('/:id', verifyToken, (req, res)=>{
         Status : "Announcement created successfully",
         Data : {         
         Id : myAnnounces.length + 1,
-        Owner : decoded.id,
+        Owner : 3,
+        status:result.value.status,
         Text: result.value.lastName,
         Startdate: result.value.start_date,
         Enddate:result.value.end_date
